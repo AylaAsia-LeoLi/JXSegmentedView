@@ -602,6 +602,7 @@ open class JXSegmentedView: UIView, JXSegmentedViewRTLCompatible {
             listContainer?.didClickSelectedItem(at: index)
         }else if selectedType == .scroll {
             delegate?.segmentedView(self, didScrollSelectedItemAt: index)
+          listContainer?.didClickSelectedItem(at: index)
         }
         delegate?.segmentedView(self, didSelectedItemAt: index)
     }
